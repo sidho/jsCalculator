@@ -23,11 +23,17 @@ html {
   width: 500px;
   height: 100%;
   margin: auto;
-  padding: 20px;
+  padding: 25px;
   border-right: 6px #838383 solid;
   border-bottom: 6px #838383 solid;
   background-color: #d1d1d1;
 
+}
+
+#model-name {
+  color: #9f9f9f;
+  font-style: italic;
+  font-family: "Courier New", Courier, monospace;
 }
 
 #display {
@@ -43,8 +49,13 @@ html {
   background-color: #fbf6ea;
   margin: 0 0 10px 0;
   padding: 0 10px 0 10px;
+
+  /* Emulating an LCD screen */
+  box-shadow: inset 5px 5px 0 0 #979696;
+  text-shadow: 4px 4px #b9b9b9;
 }
 
+/* Buttons */
 div span {
   -moz-user-select: none;
   -khtml-user-select: none;
