@@ -1,3 +1,8 @@
+// A note about the calculator logic:
+// I chose to emulate how a real calculator functions.
+// A faster and easier way would be to just save all the numbers and operations
+// as a string and perform eval() on it.
+
 var keys = document.getElementsByClassName('button');
 var display = document.getElementById('display');
 var operators = ['+', '-', '*', '/'];
@@ -26,7 +31,7 @@ var clearScreen = function () {
 
 var evaluate = function (firstValue, operation, secondValue) {
   if (operation === '/') {
-    firstValue += ".0"; // Convert to a float before dividing
+    firstValue = parseFloat(firstValue, 10); // Convert to a float before dividing
   }
   display.innerHTML = eval(firstValue + operation + secondValue);
 }
