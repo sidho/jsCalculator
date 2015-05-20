@@ -1,0 +1,85 @@
+* {
+  font-family: Helvetica, Arial, sans-serif
+}
+
+html {
+  height: 100%;
+}
+
+/* clearfix */
+.group:before,
+.group:after {
+    content: "";
+    display: table;
+}
+.group:after {
+    clear: both;
+}
+.group {
+    zoom: 1; /* For IE 6/7 (trigger hasLayout) */
+}
+
+#calculator {
+  width: 500px;
+  height: 100%;
+  margin: auto;
+  padding: 20px;
+  border-right: 6px #838383 solid;
+  border-bottom: 6px #838383 solid;
+  background-color: #d1d1d1;
+
+}
+
+.display {
+  box-sizing: border-box;
+  width: 500px;
+  height: 50px;
+  border-width: 1px 4px 4px 1px;
+  border-style: solid;
+  border-color:#ded0b4;
+  background-color: #fbf6ea;
+  margin: 0 0 10px 0;
+}
+
+div span {
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  box-sizing: border-box;
+  line-height: 41px;
+  border-right: 5px #ebbe73 solid;
+  border-bottom: 5px #ebbe73 solid;
+  background-color: #FFFFFF;
+  float: left;
+  width: 115px;
+  height: 45px;
+  margin: 5px;
+  text-align: center;
+  font-size: 18px;
+}
+
+div span.double {
+  width: 240px;
+}
+
+div span:hover{
+  background-color: #e8e4e4;
+}
+
+div span:active{
+  border-top: 2px #d1d1d1 solid;
+  border-left: 2px #d1d1d1 solid;
+  border-right: 3px #ded0b4 solid;
+  border-bottom: 3px #ded0b4 solid;
+}
+
+div span.clear-button {
+  background-color: #ff7979;
+  color:  #ffcaca;
+}
+
+div span.clear-button:hover {
+  background-color: #f75959;
+}
