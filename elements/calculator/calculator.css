@@ -30,8 +30,11 @@ html {
 
 }
 
-.display {
+#display {
   box-sizing: border-box;
+  font-size: 24px;
+  text-align: right;
+  line-height: 45px;
   width: 500px;
   height: 50px;
   border-width: 1px 4px 4px 1px;
@@ -39,6 +42,7 @@ html {
   border-color:#ded0b4;
   background-color: #fbf6ea;
   margin: 0 0 10px 0;
+  padding: 0 10px 0 10px;
 }
 
 div span {
