@@ -1,0 +1,41 @@
+<link rel="import" href="../../bower_components/polymer/polymer.html">
+<polymer-element name="my-calculator" attributes="theme">
+  <template>
+    <link rel="stylesheet" href="calculator.css" charset="utf-8">
+    <div id="calculator" class="group {{theme}}">
+      <div id="model-name">SI-D4 Calculator</div>
+      <div id="display" class="{{theme}}">{{display}}</div>
+      <div class="keypad group {{theme}}">
+        <div class="keypad-row group">
+          <span class="double clear-button" on-click="{{handleClick}}">C</span>
+          <span on-click="{{handleClick}}">&#8730;</span>
+          <span on-click="{{handleClick}}">/</span>
+        </div>
+        <div class="keypad-row group">
+          <span on-click="{{handleClick}}">7</span>
+          <span on-click="{{handleClick}}">8</span>
+          <span on-click="{{handleClick}}">9</span>
+          <span on-click="{{handleClick}}">*</span>
+        </div>
+        <div class="keypad-row group">
+          <span on-click="{{handleClick}}">4</span>
+          <span on-click="{{handleClick}}">5</span>
+          <span on-click="{{handleClick}}">6</span>
+          <span on-click="{{handleClick}}">-</span>
+        </div>
+        <div class="keypad-row group">
+          <span on-click="{{handleClick}}">1</span>
+          <span on-click="{{handleClick}}">2</span>
+          <span on-click="{{handleClick}}">3</span>
+          <span on-click="{{handleClick}}">+</span>
+        </div>
+        <div class="keypad-row group">
+          <span class="button double" on-click="{{handleClick}}">0</span>
+          <span on-click="{{handleClick}}">.</span>
+          <span on-click="{{handleClick}}">=</span>
+        </div>
+      </div>
+    </div>
+  </template>
+  <script src="calculator.js"></script>
+</polymer-element>

@@ -2,45 +2,13 @@
 <html>
 <head>
   <title>Calculator</title>
-  <link rel="stylesheet" href="elements/calculator/calculator.css" charset="utf-8">
+  <script src="bower_components/webcomponentsjs/webcomponents.min.js"></script>
+  <link rel="import" href="elements/calculator/calculator.html">
+  <link rel="stylesheet" href="stylesheets/style.css" type="text/css">
 </head>
 <body>
-
-  <div id="calculator" class="group">
-    <div id="model-name">SI-D4 Calculator</div>
-    <div id="display">0</div>
-    <div class="keypad group">
-      <div class="keypad-row group">
-        <span class="button double clear-button">C</span>
-        <span class="button">&#8730;</span>
-        <span class="button">/</span>
-      </div>
-      <div class="keypad-row group">
-        <span class="button">7</span>
-        <span class="button">8</span>
-        <span class="button">9</span>
-        <span class="button">*</span>
-      </div>
-      <div class="keypad-row group">
-        <span class="button">4</span>
-        <span class="button">5</span>
-        <span class="button">6</span>
-        <span class="button">-</span>
-      </div>
-      <div class="keypad-row group">
-        <span class="button">1</span>
-        <span class="button">2</span>
-        <span class="button">3</span>
-        <span class="button">+</span>
-      </div>
-      <div class="keypad-row group">
-        <span class="button double">0</span>
-        <span class="button">.</span>
-        <span class="button">=</span>
-      </div>
-    </div>
-
-  </div>
-  <script src="elements/calculator/calculator.js"></script>
+  <my-calculator></my-calculator>
+  <button id="toggle-theme">Toggle Theme</button>
+  <script src="javascripts/toggle.js"></script>
 </body>
 </html>

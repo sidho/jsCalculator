@@ -1,0 +1,19 @@
+{
+  "name": "calculator",
+  "version": "0.0.0",
+  "homepage": "https://github.com/sidho/jsCalculator",
+  "authors": [
+    "sidho <whoissidho@gmail.com>"
+  ],
+  "description": "A calculator built using Javascript and Polymer",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "polymer": "Polymer/polymer#^0.5"
+  }
+}

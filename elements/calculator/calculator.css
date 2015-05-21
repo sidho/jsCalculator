@@ -1,5 +1,5 @@
 * {
-  font-family: Helvetica, Arial, sans-serif
+  font-family: Helvetica, Arial, sans-serif;
 }
 
 html {
@@ -24,10 +24,18 @@ html {
   height: 100%;
   margin: auto;
   padding: 25px;
+}
+
+#calculator.light {
   border-right: 6px #838383 solid;
   border-bottom: 6px #838383 solid;
   background-color: #d1d1d1;
+}
 
+#calculator.dark {
+  border-right: 6px #c4c4c4 solid;
+  border-bottom: 6px #c4c4c4 solid;
+  background-color: #050d2b;
 }
 
 #model-name {
@@ -43,19 +51,33 @@ html {
   line-height: 45px;
   width: 500px;
   height: 50px;
+  margin: 0 0 10px 0;
+  padding: 0 10px 0 10px;
+}
+
+#display.light {
   border-width: 1px 4px 4px 1px;
   border-style: solid;
   border-color:#ded0b4;
   background-color: #fbf6ea;
-  margin: 0 0 10px 0;
-  padding: 0 10px 0 10px;
-
   /* Emulating an LCD screen */
   box-shadow: inset 5px 5px 0 0 #979696;
   text-shadow: 4px 4px #b9b9b9;
 }
 
+#display.dark {
+  border-width: 1px 4px 4px 1px;
+  border-style: solid;
+  border-color:#202020;
+  color: #ffe57d;
+  background-color: #4a7d45;
+  /* Emulating an LCD screen */
+  box-shadow: inset 5px 5px 0 0 #354638;
+  text-shadow: 4px 4px #5a5a5a;
+}
+
 /* Buttons */
+
 div span {
   -moz-user-select: none;
   -khtml-user-select: none;
@@ -64,9 +86,6 @@ div span {
   user-select: none;
   box-sizing: border-box;
   line-height: 41px;
-  border-right: 5px #ebbe73 solid;
-  border-bottom: 5px #ebbe73 solid;
-  background-color: #FFFFFF;
   float: left;
   width: 115px;
   height: 45px;
@@ -79,22 +98,55 @@ div span.double {
   width: 240px;
 }
 
-div span:hover{
+.keypad.light div span{
+  border-right: 5px #ebbe73 solid;
+  border-bottom: 5px #ebbe73 solid;
+  background-color: #FFFFFF;
+}
+
+.keypad.light div span:hover{
   background-color: #e8e4e4;
 }
 
-div span:active{
+.keypad.light div span:active{
   border-top: 2px #d1d1d1 solid;
   border-left: 2px #d1d1d1 solid;
   border-right: 3px #ded0b4 solid;
   border-bottom: 3px #ded0b4 solid;
 }
 
-div span.clear-button {
+.keypad.light div span.clear-button {
   background-color: #ff7979;
   color:  #ffcaca;
 }
 
-div span.clear-button:hover {
+.keypad.light div span.clear-button:hover {
   background-color: #f75959;
+}
+
+.keypad.dark div span{
+  border-right: 5px #2e3e59 solid;
+  border-bottom: 5px #2e3e59 solid;
+  background-color: #202020;
+  color: #FFFFFF;
+}
+
+.keypad.dark div span:hover{
+  background-color: #464646;
+}
+
+.keypad.dark div span:active{
+  border-top: 2px #050d2b solid;
+  border-left: 2px #050d2b solid;
+  border-right: 3px #2e3e59 solid;
+  border-bottom: 3px #2e3e59 solid;
+}
+
+.keypad.dark div span.clear-button {
+  background-color: #7c0000;
+  color:  #ffcaca;
+}
+
+.keypad.dark div span.clear-button:hover {
+  background-color: #703434;
 }
