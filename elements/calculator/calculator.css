@@ -45,6 +45,8 @@ html {
 }
 
 #display {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   font-size: 24px;
   text-align: right;
@@ -61,6 +63,7 @@ html {
   border-color:#ded0b4;
   background-color: #fbf6ea;
   /* Emulating an LCD screen */
+  -webkit-box-shadow: inset 5px 5px 0 0 #979696;
   box-shadow: inset 5px 5px 0 0 #979696;
   text-shadow: 4px 4px #b9b9b9;
 }
@@ -72,6 +75,7 @@ html {
   color: #ffe57d;
   background-color: #4a7d45;
   /* Emulating an LCD screen */
+  -webkit-box-shadow: inset 5px 5px 0 0 #354638;
   box-shadow: inset 5px 5px 0 0 #354638;
   text-shadow: 4px 4px #5a5a5a;
 }
@@ -84,6 +88,8 @@ div span {
   -webkit-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   line-height: 41px;
   float: left;
